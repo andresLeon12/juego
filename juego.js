@@ -19,6 +19,14 @@ var score = 0;
 var scoreText;
 
 function create() {
+	game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    
+    //have the game centered horizontally
+    //game.scale.pageAlignHorizontally = true;
+    game.scale.pageAlignVertically = true;
+
+    //screen size will be set automatically
+    game.scale.setScreenSize(true);
 
     //  We're going to be using physics, so enable the Arcade Physics system
     game.physics.startSystem(Phaser.Physics.ARCADE);
